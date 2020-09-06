@@ -1,0 +1,114 @@
+.cpe487MainContainer {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cpe487Title {
+
+}
+.cpe487Subtitle {
+    background-color: red;
+    background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.cpe487WeeklyReportContainer {
+    margin: 30px;
+    width: 90vw;
+    max-width: 1000px;
+}
+
+.Collapsible {
+    margin-bottom: 30px;
+}
+.Collapsible__trigger {
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+    padding: 10px;
+    background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+    border-radius: 20px;
+    color: white;
+    transition: 600ms;
+}
+.Collapsible__trigger:after {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+}
+.Collapsible__trigger.is-open {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+.Collapsible__trigger.is-open:after {
+    transform: rotateZ(180deg);
+}
+.Collapsible__contentOuter {
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: scale(1);
+	transition: transform 0.4s ease-in-out;
+}
+.Collapsible__contentOuter.is-open {
+    transform: scale(1.05);
+    transition: transform 0.4s ease-in-out;
+}
+.Collapsible__contentInner {
+    padding: 10px;
+    border: 1px solid linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);;
+    border-top: 0;
+}
+.Collapsible__contentInner p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.Collapsible__contentInner:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+.cpe487BackButton {
+    text-decoration: none;
+    font-weight: 800;
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    color: white;
+    background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+    padding: 15px;
+    border-radius: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.cpe487BackButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
