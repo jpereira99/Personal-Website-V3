@@ -1,0 +1,47 @@
+.LandingMainContainer {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LandingHeader {
+    width: 100vw;
+    height: 80px;
+    background-color: brown;
+    text-align: center;
+}
+
+.LandingContentContainer {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    max-width: 1700px;
+    height: 500px;
+    background-color: coral;
+}
+.LandingContentBlock {
+    width: 50%;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LandingContentImage {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.LandingMissionContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 1700px;
+    height: 300px;
+    background-color: coral;
+    justify-content: center;
+    align-items: center;
+}
